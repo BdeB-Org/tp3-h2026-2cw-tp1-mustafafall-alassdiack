@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Étudiants</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <h1>Gestion des étudiants</h1>
+
+    <nav>
+        <a href="index.html">Accueil</a>
+        <a href="cours.html">Cours</a>
+        <a href="inscriptions.html">Inscriptions</a>
+    </nav>
+
+    <h2>Liste des étudiants</h2>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nom</th>
+                <th>Courriel</th>
+                <th>Téléphone</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="table-etudiants"></tbody>
+    </table>
+
+    <h2>Ajouter un étudiant</h2>
+
+    <form id="form-etudiant">
+        <input type="number" name="id" placeholder="ID" required>
+        <input type="text" name="nom" placeholder="Nom" required>
+        <input type="email" name="courriel" placeholder="Courriel" required>
+        <input type="text" name="telephone" placeholder="Téléphone">
+        <button type="submit">Ajouter</button>
+    </form>
+
+    <script src="js/api.js"></script>
+    <script src="js/etudiants.js"></script>
+
+</body>
+</html>

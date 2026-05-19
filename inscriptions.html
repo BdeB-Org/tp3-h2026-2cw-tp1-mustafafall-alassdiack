@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Inscriptions</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <h1>Gestion des inscriptions</h1>
+
+    <nav>
+        <a href="index.html">Accueil</a>
+        <a href="etudiants.html">Étudiants</a>
+        <a href="cours.html">Cours</a>
+    </nav>
+
+    <h2>Liste des inscriptions</h2>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>ID Étudiant</th>
+                <th>ID Cours</th>
+                <th>Date</th>
+                <th>État</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="table-inscriptions"></tbody>
+    </table>
+
+    <h2>Ajouter une inscription</h2>
+
+    <form id="form-inscription">
+        <input type="number" name="id" placeholder="ID" required>
+        <input type="number" name="id_etudiant" placeholder="ID étudiant" required>
+        <input type="number" name="id_cours" placeholder="ID cours" required>
+        <input type="date" name="date_inscription" required>
+        <input type="text" name="etat" placeholder="État">
+        <button type="submit">Ajouter</button>
+    </form>
+
+    <script src="js/api.js"></script>
+    <script src="js/inscriptions.js"></script>
+
+</body>
+</html>
