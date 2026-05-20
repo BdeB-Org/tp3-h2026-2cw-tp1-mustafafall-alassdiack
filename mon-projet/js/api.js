@@ -1,4 +1,4 @@
-const API_BASE = "http://localhost:8080/ords/vbox_virtual_i/";
+const API_BASE = "http://localhost:8080/ords/scott/";
 
 async function getAll(endpoint) {
     const response = await fetch(API_BASE + endpoint + "/");
