@@ -1,0 +1,205 @@
+
+/* ------------------------------
+   GLOBAL
+------------------------------ */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #e3f2fd;
+    color: #333;
+}
+
+/* ------------------------------
+   HEADER + NAVIGATION
+------------------------------ */
+header {
+    background: #1e88e5;
+    color: white;
+    padding: 15px 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav a {
+    margin-right: 15px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* ------------------------------
+   BANNIÈRE (si utilisée)
+------------------------------ */
+.banner {
+    padding: 90px;
+    text-align: center;
+    background: #e3f2fd;
+}
+
+.banner-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 30px;
+}
+
+.banner-text {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px 40px;
+    border-radius: 8px;
+}
+
+.banner-text h2 {
+    margin: 0 0 10px 0;
+    color: #1e88e5;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+/* ------------------------------
+   CONTENEUR PRINCIPAL
+------------------------------ */
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: 30px auto;
+    background: #e3f2fd;
+    padding: 25px;
+    border-radius: 6px;
+    box-shadow: 0 0 6px rgba(0,0,0,0.1);
+}
+
+/* ------------------------------
+   CARTES (comme TP2)
+------------------------------ */
+.card {
+    background: white;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 4px;
+    box-shadow: 0 0 4px rgba(0,0,0,0.1);
+}
+
+/* ------------------------------
+   FORMULAIRES
+------------------------------ */
+.form {
+    max-width: 400px;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0 0 4px rgba(0,0,0,0.1);
+}
+
+.form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.form input,
+.form select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 4px;
+    border: 1px solid #bbb;
+    border-radius: 4px;
+}
+
+.form button {
+    width: 100%;
+    margin-top: 15px;
+    padding: 10px;
+    background: #1e88e5;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.form button:hover {
+    background: #166fbe;
+}
+
+/* ------------------------------
+   TABLEAUX
+------------------------------ */
+table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background: white;
+    margin-left: 1px;    
+}
+
+.bloc-inscriptions {
+    margin-left: 30px;
+}
+
+
+th {
+    background: #1e88e5;
+    color: white;
+    padding: 10px;
+    text-align: left;
+}
+
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+tr:hover {
+    background: #f0f7ff;
+}
+
+/* ------------------------------
+   BOUTONS
+------------------------------ */
+.btn {
+    display: inline-block;
+    padding: 8px 16px;
+    background: #1e88e5;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.btn-edit {
+    background: #ffb300;
+}
+
+.btn-delete {
+    background: #e53935;
+}
+
+.btn-edit:hover {
+    background: #e0a000;
+}
+
+.btn-delete:hover {
+    background: #c62828;
+}
+
+/* ------------------------------
+   FOOTER
+------------------------------ */
+footer {
+    text-align: center;
+    background: #1e88e5;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+}

@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
+<link rel="stylesheet" href="css/style.css">
+
 <head>
     <meta charset="UTF-8">
     <title>Inscriptions</title>
@@ -14,7 +16,8 @@
         <a href="etudiants.html">Étudiants</a>
         <a href="cours.html">Cours</a>
     </nav>
-
+    
+<div class="bloc-inscriptions">
     <h2>Liste des inscriptions</h2>
 
     <table border="1">
@@ -31,6 +34,8 @@
         <tbody id="table-inscriptions"></tbody>
     </table>
 
+    
+
     <h2>Ajouter une inscription</h2>
 
     <form id="form-inscription">
@@ -41,6 +46,9 @@
         <input type="text" name="etat" placeholder="État">
         <button type="submit">Ajouter</button>
     </form>
+
+</div>
+
 
     <script src="js/api.js"></script>
     <script src="js/inscriptions.js"></script>
