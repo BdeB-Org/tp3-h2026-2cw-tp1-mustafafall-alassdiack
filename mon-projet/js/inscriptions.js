@@ -1,21 +1,20 @@
-// ====================== DATE FORMATTING ======================
+// Format date
 function formatDateToMMDDYYYY(dateStr) {
     if (!dateStr) return '';
 
-    // Handle both YYYY-MM-DD and full ISO strings
     const datePart = dateStr.split('T')[0];
     const [year, month, day] = datePart.split('-');
 
     return `${month}/${day}/${year}`;
 }
 
-// ====================== MAIN LOGIC ======================
+// Logique principale
 document.addEventListener("DOMContentLoaded", async () => {
 
     const table = document.querySelector("#table-inscriptions");
     const form = document.querySelector("#form-inscription");
 
-    // Load existing inscriptions
+    
     const inscriptions = await getAll("inscription");
     
     inscriptions.forEach(i => {
@@ -31,7 +30,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         `;
     });
 
-       // ====================== FORM SUBMIT ======================
+       // Soumission format
 form.addEventListener("submit", async (event) => {
     event.preventDefault();
 
@@ -43,14 +42,14 @@ form.addEventListener("submit", async (event) => {
     };
 
     try {
-        console.log("🔄 Sending data:", body);
+        console.log("Sending data:", body);
         
         const result = await create("inscription", body);
-        console.log("✅ Create result:", result);
+        console.log("Create result:", result);
 
         alert("Inscription ajoutée avec succès !");
         
-        // Refresh table
+        // Rafraîchir table
         const table = document.querySelector("#table-inscriptions");
         table.innerHTML = "";
         
@@ -71,13 +70,13 @@ form.addEventListener("submit", async (event) => {
         form.reset();
         
     } catch (error) {
-        console.error("❌ Full error:", error);
+        console.error("Full error:", error);
         alert("Erreur: " + (error.message || JSON.stringify(error)));
     }
 });
 });
 
-// ====================== DELETE FUNCTION ======================
+// Suppression de fonction
 async function supprimerInscription(id) {
     if (confirm("Voulez-vous vraiment supprimer cette inscription ?")) {
         try {
